@@ -57,7 +57,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="r5W-aZ-CZb">
-                        <barButtonItem key="rightBarButtonItem" title="Sort" id="U89-C3-aZx"/>
+                        <barButtonItem key="rightBarButtonItem" title="Sort" id="U89-C3-aZx">
+                            <connections>
+                                <action selector="sortButtonPressed:" destination="BYZ-38-t0r" id="0Ok-kN-5ZZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="9UU-gm-7Y0" id="AR2-mZ-hby"/>
