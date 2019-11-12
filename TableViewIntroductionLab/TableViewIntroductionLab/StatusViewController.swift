@@ -45,7 +45,7 @@ class StatusViewController: UIViewController {
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-            let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "taskCell", for: indexPath)
             
             let task = tasks[indexPath.section][indexPath.row]
             
@@ -62,7 +62,7 @@ class StatusViewController: UIViewController {
         
         func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
             
-            return tasks[section].first?.name
+            return tasks[section].first?.status.rawValue
         }
     }
     
