@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023FC74C237B613500AF7323 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023FC74B237B613500AF7323 /* StatusViewController.swift */; };
 		CD55F86E22F9DD69001EF64D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55F86D22F9DD69001EF64D /* AppDelegate.swift */; };
 		CD55F87022F9DD69001EF64D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55F86F22F9DD69001EF64D /* ViewController.swift */; };
 		CD55F87322F9DD69001EF64D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD55F87122F9DD69001EF64D /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		023FC74B237B613500AF7323 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		CD55F86A22F9DD69001EF64D /* TableViewIntroductionLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewIntroductionLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD55F86D22F9DD69001EF64D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD55F86F22F9DD69001EF64D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				CD55F86D22F9DD69001EF64D /* AppDelegate.swift */,
 				CD55F86F22F9DD69001EF64D /* ViewController.swift */,
+				023FC74B237B613500AF7323 /* StatusViewController.swift */,
 				CD55F87F22F9DDE2001EF64D /* Task.swift */,
 				CD55F87122F9DD69001EF64D /* Main.storyboard */,
 				CD55F87422F9DD6A001EF64D /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023FC74C237B613500AF7323 /* StatusViewController.swift in Sources */,
 				CD55F87022F9DD69001EF64D /* ViewController.swift in Sources */,
 				CD55F88022F9DDE2001EF64D /* Task.swift in Sources */,
 				CD55F86E22F9DD69001EF64D /* AppDelegate.swift in Sources */,

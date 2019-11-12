@@ -63,5 +63,29 @@ struct Task {
                  dueDate: dateFormatter.date(from: "04-13-2020")!),
         ]
     }
+    
+    static func getSections() -> [[Task]] {
+        
+        let sortedTasks = allTasks.sorted { $0.name < $1.name }
+        let taskTitles: Set<Status> = Set(allTasks.map { $0.status })
+        var sectionsArr = Array(repeating: [Task](), count: taskTitles.count)
+        
+        var currentIndex = 0
+        var currentTask = sortedTasks.first?.status ?? Status.completed
+       
+        for task in sortedTasks {
+            
+            if task.status == currentTask {
+                sectionsArr[currentIndex].append(task)
+            } else {
+                currentIndex += 1
+                currentTask = task.status
+                sectionsArr[currentIndex].append(task)
+            }
+        }
+        
+        return sectionsArr
+    }
+    
 
 }
