@@ -19,6 +19,14 @@ class ViewController: UIViewController {
         
     private var sortAscending = false
     
+    lazy var dateFormatter: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "EEEE, MMM d, yyyy h:mm a"
+    //        formatter.dateStyle = .medium
+    //        formatter.timeStyle = .medium
+            return formatter
+        }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -54,7 +62,7 @@ extension ViewController: UITableViewDataSource {
         let task = tasks[indexPath.row]
         
         cell.textLabel?.text = task.name
-        cell.detailTextLabel?.text = task.dueDate.description
+        cell.detailTextLabel?.text = dateFormatter.string(from: task.dueDate)
 
         return cell
     }
